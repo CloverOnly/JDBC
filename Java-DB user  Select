@@ -22,7 +22,7 @@ public class UserSelectExample {
 			String sql = ""+ "SELECT userid, username, userpassword, userage, useremail " +
 								"FROM users " + "WHERE userId=?";
 			
-			PreparedStatement pstmt = conn.prepareStatement(sql);
+			PreparedStatement pstmt = conn.prepareStatement(sql);	//conn.prepareStatement(sql)-> sql명령어로 바꿔줘 라는 뜻
 			//?에 값 지정
 			pstmt.setString(1, "winter");
 			
