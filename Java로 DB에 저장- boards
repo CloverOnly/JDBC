@@ -27,8 +27,8 @@ public class BoardInsertExample {
 			pstmt.setString(1, "눈오는 날");
 			pstmt.setString(2, "함박눈이 내려오");
 			pstmt.setString(3, "winter");
-			pstmt.setString(4, "snow.jpg");
-			pstmt.setBlob(5, new FileInputStream("snowman.jpg")); 
+			pstmt.setString(4, "snowman.jpg");
+			pstmt.setBlob(5, new FileInputStream("C:\\Users\\이영진\\git\\Java-DB\\javadb\\src\\javadb\\snowman.jpg")); 
 			//값 지정
 			
 			//값 지정 후 executeUpdate()메소드를 호출하면 SQL문이 실행되면서 boards 테이블에 1개 행이 저장
